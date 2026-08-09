@@ -1,0 +1,18 @@
+oblivion-sih2025/
+├── tools/
+│   ├── pdf/
+│   ├── qr/
+│   └── signing/
+├── oblivion/
+│   ├── backend/
+│   │   ├── app/
+│   │   │   └── main.py
+│   │   ├── Dockerfile
+│   │   └── requirements.txt
+│   ├── docs/
+│   ├── frontend/
+│   │   └── oblivion-ui/
+│   └── scripts/
+│       └── wipe_script.sh
+└── docker-compose.yml
+

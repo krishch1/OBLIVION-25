@@ -1,0 +1,169 @@
+/* Main container for the certificate */
+.certificate-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #004466;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section with the main title */
+.certificate-header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.certificate-header h1 {
+  color: #004466;
+  margin: 0;
+}
+
+/* Body section containing the wipe details */
+.certificate-body {
+  margin-bottom: 24px;
+}
+
+/* Styling for each row of data (e.g., "Device ID: ...") */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.detail-value {
+  color: #555;
+}
+
+/* Special styling for code-like values like hashes */
+.detail-value.code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #eef;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Footer section for QR code and stamp */
+.certificate-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Placeholder for where the QR code will go */
+.qr-code-placeholder {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+/* A simple "Verified" stamp for visual flair */
+.verified-stamp {
+    border: 3px double #006400;
+    color: #006400;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transform: rotate(-10deg);
+}
+
+/* Styling for the main page container */
+.page-container {
+    text-align: center;
+}
+
+/* Style for the 'Generate' button */
+.generate-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin: 40px;
+    transition: background-color 0.3s;
+}
+
+.generate-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the 'Download PDF' button */
+.download-button {
+    font-size: 16px;
+    color: #004466;
+    background-color: transparent;
+    border: 2px solid #004466;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #004466;
+    color: white;
+}
+
+/* Style for the actual QR code image */
+.qr-code {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ddd;
+}
+
+/* Styling for the error message */
+.error-message {
+  color: #D8000C; /* Red color for errors */
+  background-color: #FFD2D2; /* Light red background */
+  border: 1px solid #D8000C;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* A simple CSS loading spinner */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #fff;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* The animation for the spinner rotation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Make the button look disabled when loading */
+.generate-button:disabled {
+  background-color: #0056b3;
+  cursor: not-allowed;
+}

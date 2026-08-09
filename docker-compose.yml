@@ -1,0 +1,27 @@
+# docker-compose.yml (updated)
+
+services:
+  # The FastAPI Backend Service
+  backend:
+    build:
+      context: . # Use the root directory as the build context
+      dockerfile: oblivion/backend/Dockerfile
+    container_name: oblivion-backend
+    ports:
+      - "8001:8000" # Expose backend on host port 8001
+    volumes:
+      # Sync local code for live-reloading during development
+      - ./oblivion/backend:/app
+      - ./tools:/tools
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # The React Frontend Service
+  frontend:
+    build:
+      context: ./oblivion/frontend/oblivion-ui # Build from the UI directory
+      dockerfile: Dockerfile
+    container_name: oblivion-frontend
+    ports:
+      - "3000:80" # Expose frontend on host port 3000
+    depends_on:
+      - backend # Start the backend before the frontend

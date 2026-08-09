@@ -1,0 +1,97 @@
+/* File: src/App.css */
+body {
+  background-color: #e9ecef;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.certificate {
+  width: 850px;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  padding: 30px 50px;
+}
+
+.cert-header {
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cert-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #343a40;
+}
+
+.status-verified {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.cert-section h2 {
+  font-size: 1.1rem;
+  color: #495057;
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.value {
+  color: #212529;
+}
+
+.mono {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
+.cert-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qr-placeholder {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #adb5bd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.signature {
+  flex: 1;
+  margin-left: 30px;
+}

@@ -1,0 +1,8 @@
+{
+  "targetDevice": "oblivion_disk.img",
+  "wipeMethod": "shred",
+  "startTime": "2025-09-22T10:15:34+0000",
+  "endTime": "2025-09-22T10:15:35+0000",
+  "preWipeHash_sha256": "3504cbbc9930403b327dcd2b417e05c13bf0b9cb259679c611e43805fc24b0c3",
+  "postWipeHash_sha256": "03f48d30b1f2e4ab974f002a40fcf523564a62726e77dd92d59db6f8ad41e4e0"
+}
